@@ -1,0 +1,42 @@
+
+h1.regelTitle{
+    font-size: 65px;
+    text-align: center;
+    font-weight: normal;
+    line-height: 150%;
+    margin-bottom: 60px;
+}
+
+div.regelTekst{
+    width: 80%;
+    margin: 0 auto;
+    font-size: 34px;
+    text-align: center;
+    font-weight: normal;
+    line-height: 150%;
+}
+
+.regelSide .metaData{
+    clear: both;
+    margin-top: 150px;
+    text-align: center;
+}
+
+.regelSide .metaData p{
+    float: none;
+    margin-bottom: 10px;
+}
+
+.alleRegler{
+    clear: both;
+    text-align: center;
+    font-size: 40px;
+    margin-top: 240px;
+}
+
+.linje{
+    width: 100%;
+    height: 1px;
+    background: #ECECEC;
+    margin: 160px 0;
+}
