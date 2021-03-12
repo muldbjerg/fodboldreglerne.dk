@@ -30,8 +30,7 @@ module.exports = {
         background_color: `#ffffff`,
         theme_color: `#ffffff`,
         display: `standalone`,
-        icon: `src/images/fodboldreglerne-icon.svg`, // This path is relative to the root of the site.
-        msapplicationTileColor: '00a300',
+        icon: `src/images/fodboldreglerne-icon.svg`,
       },
     },
     `gatsby-plugin-remove-serviceworker`,

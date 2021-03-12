@@ -40,6 +40,7 @@ export const query = graphql`
       episodeurl
       hinter
       hinterurl
+      kommentar
     }
   }
 }

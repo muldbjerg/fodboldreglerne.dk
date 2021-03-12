@@ -16,16 +16,15 @@ const Card = ({ info }) => {
     };
 
     const showLinkShared = () => {
-        setLinkShared(!linkShared);
+        setLinkShared(true);
         setTimeout(function(){ 
-            setLinkShared(!linkShared);
-        }, 3000);
+            setLinkShared(false);
+        }, 4000);
     };
 
     const delRegel = () => {
         if(copy(baseUrl + "/" + info.slug)){
             showLinkShared();
-            console.log("kopieret");
         };
     }
 
@@ -46,8 +45,8 @@ const Card = ({ info }) => {
                     {info.episode && !info.episodeurl &&
                         <p>Nævnt i {info.episode}</p>
                     }
-                    {info.episode && info.hinter &&
-                        <span>·</span>
+                    {info.kommentar &&
+                        <p dangerouslySetInnerHTML={{__html: info.kommentar }}></p>
                     }
                     {info.hinter && !info.hinterurl &&
                         <p>Hintet af {info.hinter}</p>
