@@ -112,9 +112,30 @@ h2{
         line-height: 160%;
     }
 
+    .toggleSign{
+        padding-top: 16px;
+    }
+
     .metaData{
         font-size: 12px;
     }
+}
+
+
+@media screen and (max-width: 390px) {
+
+    .delRegel{
+        margin: 0 auto;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    .delRegel span{ 
+        display: block;
+        margin-top: 10px;
+        margin-left: 0px;
+    }
+
 }
 
 @media (hover: hover) {

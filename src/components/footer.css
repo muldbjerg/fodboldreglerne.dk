@@ -55,4 +55,8 @@ footer{
     footer{
         padding: 0 20px;
     }
+
+    .fejl{
+        padding-top: 40px;
+    }
 }

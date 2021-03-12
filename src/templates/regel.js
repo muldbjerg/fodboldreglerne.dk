@@ -31,6 +31,9 @@ const Regel = ({ data }) => {
                     {regel.episode && !regel.episodeurl &&
                         <p>Nævnt i {regel.episode}</p>
                     }
+                    {regel.kommentar &&
+                        <p dangerouslySetInnerHTML={{__html: regel.kommentar }}></p>
+                    }
                     {regel.hinter && !regel.hinterurl &&
                         <p>Hintet af {regel.hinter}</p>
                     }
@@ -61,6 +64,7 @@ export const query = graphql`
             episodeurl
             hinter
             hinterurl
+            kommentar
         }
     }
 `

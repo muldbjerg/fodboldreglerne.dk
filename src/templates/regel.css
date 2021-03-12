@@ -40,3 +40,35 @@ div.regelTekst{
     background: #ECECEC;
     margin: 160px 0;
 }
+
+
+
+/* 
+@media screen and (max-width: 900px) {
+    .cardContent{
+        width: 80%;
+    }
+} */
+
+
+@media screen and (max-width: 600px) {
+    h1.regelTitle{
+        font-size: 45px;
+        line-height: 135%;
+    }
+    
+    div.regelTekst{
+        font-size: 30px;
+    }
+
+    .regelSide .metaData{
+        margin-top: 40px;
+    }
+
+    .alleRegler{
+        clear: both;
+        text-align: center;
+        font-size: 40px;
+        margin-top: 140px;
+    }
+}
