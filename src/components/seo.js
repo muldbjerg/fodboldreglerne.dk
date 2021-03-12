@@ -54,7 +54,7 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           property: `og:image`,
-          content: `/images/share-image.png`,
+          content: image,
         },
         {
           name: `twitter:card`,
@@ -74,7 +74,7 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           name: `twitter:image`,
-          content: `/images/share-image.png`,
+          content: image,
         },
       ].concat(meta)}
     />
@@ -85,6 +85,7 @@ SEO.defaultProps = {
   lang: `en`,
   meta: [],
   description: ``,
+  image: `${siteUrl + '/images/share-image.png'}`,
 }
 
 SEO.propTypes = {
@@ -92,6 +93,7 @@ SEO.propTypes = {
   lang: PropTypes.string,
   meta: PropTypes.arrayOf(PropTypes.object),
   title: PropTypes.string.isRequired,
+  image: PropTypes.string,
 }
 
 export default SEO
