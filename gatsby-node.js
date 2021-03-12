@@ -30,7 +30,6 @@ exports.createPages = ({ graphql, actions }) => {
       }
     `).then(result => {
       result.data.allGoogleSheetReglerneRow.edges.forEach(({ node }) => {
-        console.log(node);
         createPage({
           path: node.slug,
           component: path.resolve(`./src/templates/regel.js`),

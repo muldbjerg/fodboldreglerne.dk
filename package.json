@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "babel-runtime": "^6.26.0",
     "copy-text-to-clipboard": "^3.0.1",
     "gatsby": "^2.32.8",
     "gatsby-image": "^2.11.0",
