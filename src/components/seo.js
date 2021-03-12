@@ -85,7 +85,7 @@ SEO.defaultProps = {
   lang: `en`,
   meta: [],
   description: ``,
-  image: `${siteUrl + '/images/share-image.png'}`,
+  image: `${'https://fodboldreglerne.dk/images/share-image.png'}`,
 }
 
 SEO.propTypes = {
