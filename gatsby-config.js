@@ -34,15 +34,7 @@ module.exports = {
         msapplicationTileColor: '00a300',
       },
     },
-    {
-      resolve: 'gatsby-plugin-offline',
-      options: {
-        precachePages: [`/`],
-        workboxConfig: {
-          globPatterns: ['**/icon-path*']
-        }
-      }
-    },
+    `gatsby-plugin-remove-serviceworker`,
     `gatsby-plugin-gatsby-cloud`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
