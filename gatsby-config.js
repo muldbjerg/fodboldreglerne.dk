@@ -1,3 +1,7 @@
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+
 module.exports = {
   siteMetadata: {
     title: `Fodboldreglerne.dk`,
@@ -36,8 +40,19 @@ module.exports = {
       options: {         
         spreadsheetId: '1wUk0sk2o1WMs4UMysLbThCfPUTi-WGPb2-8_pwJJodo',         
         worksheetTitle: 'Reglerne',       
-        credentials: require('./secret.json')   
-        } 
+        credentials: {
+          "type": "service_account",
+          "project_id": "fodboldreglerne",
+          "private_key_id": process.env.GATSBY_GOOGLE_PRIVATE_KEY_ID.replace(/\\n/gm, '\n'),
+          "private_key": process.env.GATSBY_GOOGLE_PRIVATE_KEY.replace(/\\n/gm, '\n'),
+          "client_email": process.env.GATSBY_GOOGLE_CLIENT_EMAIL.replace(/\\n/gm, '\n'),
+          "client_id": process.env.GATSBY_GOOGLE_CLIENT_ID.replace(/\\n/gm, '\n'),
+          "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+          "token_uri": "https://oauth2.googleapis.com/token",
+          "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+          "client_x509_cert_url": process.env.GATSBY_GOOGLE_CLIENT_X509_CERT_URL.replace(/\\n/gm, '\n')
+        }
+      } 
     },
     {
       resolve: 'gatsby-plugin-matomo',
