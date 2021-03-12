@@ -1,7 +1,13 @@
 footer{
     clear: both;
     margin-top: 100px;
+
+    background-image: url("../images/footerbg.png");
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: contain;
 }
+
 
 .fejl{
     padding-top: 100px;

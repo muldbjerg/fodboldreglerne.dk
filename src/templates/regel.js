@@ -5,6 +5,7 @@ import { graphql } from "gatsby"
 
 
 import Layout from "../components/layout"
+import SEO from "../components/seo"
 
 import "./regel.css"
 
@@ -14,6 +15,8 @@ const Regel = ({ data }) => {
     return (
 
         <Layout>
+            <SEO title={ regel.navn + " → Fodboldreglerne.dk"} description={regel.regeltekst} />
+
             <div  className="regelSide">
                 <h1 className="regelTitle">
                     { regel.navn }  

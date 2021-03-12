@@ -10,7 +10,7 @@ const Footer = ({ siteTitle }) => (
       <div className="fejl">
         <h3>Fejl og mangler?</h3>
         <p>Det kan jeg selvfølgelig max beklage.</p>
-        <a href="" className="btn" target="_blank" rel="noreferrer">Skriv ind</a>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSexM_3H49QjfJYUw1nyLZv9mWHm5Bt6Fenks_aveU_ee6Klog/viewform?usp=sf_link" className="btn" target="_blank" rel="noreferrer">Skriv ind</a>
       </div>
 
       <div className="rigtigFooter">
@@ -60,6 +60,8 @@ const Footer = ({ siteTitle }) => (
 
           </div>
       </div>
+
+      <div className="clearfix"></div>
   </footer>
 )
 

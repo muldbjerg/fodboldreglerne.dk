@@ -614,3 +614,7 @@ a.btn{
     background: #6CFF69;
   }
 }
+.clearfix{
+  width:100%;
+  clear: both;
+}

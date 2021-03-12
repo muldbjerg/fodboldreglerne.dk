@@ -3,6 +3,7 @@ import { graphql } from 'gatsby'
 
 import Layout from "../components/layout"
 import Card from "../components/card"
+import SEO from "../components/seo"
 
 import "./index.css"
 
@@ -14,13 +15,15 @@ const IndexPage = ({ data }) => {
 
   return (
       <Layout>
-          <h1 className="indexText">Universelle regler, nedfældet af det <br/> jammerlige talkshow <a target="_blank" rel="noreferrer" href="https://twitter.com/fodboldpodcast">Fodbold Ministeriet</a> </h1>
-          {/* <SEO title="Home" /> */}
+          <SEO title="Fodboldreglerne.dk - Universelle regler fra Fodboldministeriet" />
+
+          <h1 className="indexText">Universelle regler, nedfældet af det <br/> jammerlige talkshow <a target="_blank" rel="noreferrer" href="https://twitter.com/fodboldpodcast">Fodboldministeriet</a> </h1>
+
           
           {posts.map(post => (
-            <Card info={post} key={post.name} />
+            <Card info={post} key={"card"+post.slug} />
           ))}
-          {/* <Link to="/page-2/">Go to page 2</Link> */}
+
       </Layout>
   )
 }
